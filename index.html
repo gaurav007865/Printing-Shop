@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Aasthanjali Screen & Offset | Premium Printing</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- GOOGLE FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#f5f7fb;
+  color:#333;
+  scroll-behavior:smooth;
+}
+
+/* HEADER */
+header{
+  background:linear-gradient(135deg,#2c3e50,#4ca1af);
+  color:#fff;
+  padding:25px;
+  text-align:center;
+}
+
+header h1{font-size:28px;}
+header p{opacity:.9}
+
+/* NAVBAR */
+nav{
+  display:flex;
+  justify-content:center;
+  gap:25px;
+  background:#fff;
+  padding:12px;
+  position:sticky;
+  top:0;
+  z-index:10;
+  box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+nav a{
+  text-decoration:none;
+  color:#333;
+  font-weight:500;
+}
+
+nav a:hover{color:#4ca1af}
+
+/* HERO */
+.hero{
+  padding:70px 20px;
+  text-align:center;
+  background:url("https://images.unsplash.com/photo-1581090700227-1e37b190418e") center/cover;
+  color:#fff;
+}
+
+.hero h2{font-size:36px;margin-bottom:10px;}
+.hero p{font-size:18px;margin-bottom:20px;}
+
+.hero button{
+  padding:12px 30px;
+  border:none;
+  background:#ffce00;
+  font-size:16px;
+  cursor:pointer;
+  border-radius:30px;
+}
+
+/* SECTIONS */
+section{
+  padding:60px 20px;
+  max-width:1100px;
+  margin:auto;
+}
+
+section h2{
+  text-align:center;
+  margin-bottom:30px;
+  font-size:30px;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+/* BOX */
+.box{
+  background:#fff;
+  padding:25px;
+  text-align:center;
+  border-radius:15px;
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
+  transition:.3s;
+}
+
+.box:hover{
+  transform:translateY(-8px);
+}
+
+/* GALLERY */
+.gallery img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+  border-radius:12px;
+  transition:.3s;
+}
+
+.gallery img:hover{
+  transform:scale(1.05);
+}
+
+/* CONTACT */
+.contact{
+  background:#fff;
+  border-radius:15px;
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
+  text-align:center;
+}
+
+/* FORM */
+form{
+  background:#fff;
+  padding:30px;
+  border-radius:15px;
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+form input, form select, form textarea{
+  width:100%;
+  padding:12px;
+  margin-bottom:15px;
+  border-radius:8px;
+  border:1px solid #ccc;
+}
+
+form button{
+  width:100%;
+  padding:14px;
+  background:#4ca1af;
+  border:none;
+  color:#fff;
+  font-size:16px;
+  border-radius:30px;
+  cursor:pointer;
+}
+
+#msg{text-align:center;margin-top:15px;font-weight:600}
+
+/* FOOTER */
+footer{
+  background:#2c3e50;
+  color:#fff;
+  text-align:center;
+  padding:15px;
+  margin-top:40px;
+}
+
+@media(max-width:600px){
+  .hero h2{font-size:26px;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Aasthanjali Screen & Offset</h1>
+  <p>Premium Quality Printing Solutions</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#services">Services</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Contact</a>
+  <a href="#order">Order</a>
+</nav>
+
+<section id="home" class="hero">
+  <h2>Professional Printing Services</h2>
+  <p>Fast • Reliable • Premium Finish</p>
+  <button onclick="location.href='#order'">Book Now</button>
+</section>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="grid">
+    <div class="box">Offset Printing</div>
+    <div class="box">Screen Printing</div>
+    <div class="box">Wedding Cards</div>
+    <div class="box">Flex & Banner</div>
+    <div class="box">Project Binding</div>
+    <div class="box">Bill Books</div>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2>Our Work</h2>
+  <div class="grid gallery">
+    <!-- 👉 YAHAN AAP APNI IMAGES KA URL DAL SAKTE HO -->
+    <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70">
+    <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab">
+    <img src="https://images.unsplash.com/photo-1603204077169-9d6e6f44d8d8">
+    <img src="https://images.unsplash.com/photo-1614850523296-d8c1af93d400">
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+  <p>📍 Near Pathanpura Gate, Chandrapur</p>
+  <p>📞 +91-9923456743</p>
+  <p>📧 akkewaranant15@gmail.com</p>
+</section>
+
+<section id="order">
+  <h2>Place Your Order</h2>
+  <form id="orderForm">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="text" name="mobile" placeholder="Mobile Number" required>
+
+    <select id="serviceSelect" required>
+      <option value="">Select Service</option>
+      <option>Wedding Cards</option>
+      <option>Visiting Cards</option>
+      <option>Flex Printing</option>
+      <option>Project Binding</option>
+      <option value="other">Other</option>
+    </select>
+
+    <input type="text" id="customService" placeholder="Enter Custom Service" style="display:none">
+
+    <textarea name="requirement" placeholder="Order Details"></textarea>
+
+    <input type="file" id="fileInput" accept=".pdf,image/*" required>
+
+    <button type="submit">Submit Order</button>
+  </form>
+
+  <p id="msg"></p>
+</section>
+
+<footer>
+  © 2025 Aasthanjali Screen & Offset | Premium Printing
+</footer>
+
+<script>
+const scriptURL = "https://script.google.com/macros/s/AKfycbyaMuo7DFxG-Lznd4lyKHqTHAkbM580XAJQO0PqbVfIDxQTZFyWTsgfPtYIAqFC1z5NtQ/exec";
+
+document.getElementById("serviceSelect").addEventListener("change", function(){
+  document.getElementById("customService").style.display =
+    this.value === "other" ? "block" : "none";
+});
+
+document.getElementById("orderForm").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  const file = fileInput.files[0];
+  if(file.size > 5*1024*1024){
+    alert("File must be under 5MB");
+    return;
+  }
+
+  const reader = new FileReader();
+  reader.onload = () => {
+    const data = {
+      name:e.target.name.value,
+      mobile:e.target.mobile.value,
+      service:serviceSelect.value==="other"
+        ? customService.value
+        : serviceSelect.value,
+      requirement:e.target.requirement.value,
+      fileName:file.name,
+      mimeType:file.type,
+      fileData:reader.result.split(",")[1]
+    };
+
+    fetch(scriptURL,{
+      method:"POST",
+      body:JSON.stringify(data)
+    })
+    .then(res=>res.text())
+    .then(msg=>{
+      document.getElementById("msg").innerText = msg;
+      e.target.reset();
+    });
+  };
+  reader.readAsDataURL(file);
+});
+</script>
+
+</body>
+</html>

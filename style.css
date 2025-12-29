@@ -1,0 +1,170 @@
+/* ===== GLOBAL ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, Arial, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: #111;
+    color: gold;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+header p {
+    color: #ddd;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+    background: #222;
+    padding: 12px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: gold;
+}
+
+/* ===== HERO ===== */
+.hero {
+    background: linear-gradient(to right, #000, #444);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h2 {
+    font-size: 36px;
+}
+
+.hero p {
+    margin-top: 10px;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: gold;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* ===== SECTIONS ===== */
+section {
+    padding: 60px 20px;
+    text-align: center;
+    background: white;
+    margin-top: 15px;
+}
+
+section h2 {
+    margin-bottom: 30px;
+    color: #8a7c7c;
+}
+
+/* ===== GRID ===== */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.box {
+    background: #fff;
+    padding: 25px;
+    border-left: 6px solid gold;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    font-weight: bold;
+}
+
+/* ===== ABOUT ===== */
+.about p {
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+/* ===== CONTACT ===== */
+.contact p {
+    margin: 8px 0;
+    font-weight: bold;
+}
+
+/* ===== FORM ===== */
+form {
+    max-width: 450px;
+    margin: auto;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+button.submit {
+    background: gold;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 20px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    .hero h2 {
+        font-size: 26px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+}
